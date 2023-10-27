@@ -40,6 +40,15 @@ function handleCellPlayed(clickedCell, clickedCellIndex) {
 function handlePlayerChange() {
   // Colocar um operador ternário definindo currentePlayer para ser o X ou O
   currentPlayer = currentPlayer === "X" ? "O" : "X";
+  
+    /*
+  if(currentPlayer === "X"){
+    currentPlayer === "O"
+  } else{
+    currentPlayer === "X"
+  }
+  */
+  
   // Usar innerHTML para exibir a mensagem de status de acordo com a função currentPlayerTurn
   statusDisplay.innerHTML = currentPlayerTurn();
 }
